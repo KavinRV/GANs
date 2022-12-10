@@ -28,7 +28,7 @@ my_transforms = transforms.Compose(
     ]
 )
 
-dataset = datasets.MNIST(root="dataset/", transform=my_transforms, download=True)
+dataset = datasets.MNIST(root="../dataset/", transform=my_transforms, download=True)
 # dataset = datasets.ImageFolder(root="dataset/", transform=my_transforms)
 loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
